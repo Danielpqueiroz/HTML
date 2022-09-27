@@ -16,58 +16,112 @@
         }
         #cabecalho{
             height: 150px;
-            background-color: orange;
-            width: 91%;
+            background-image: url('imagem/topo2.jpeg');
+            width: 1230px;
             margin: 0 auto;
             margin-top: 10px;
         }
+        #boneca{
+            height: 90px;
+            width: 130px;
+            background-image: url('imagem/bon.png');
+            position: absolute;
+            
+            top: 7%;
+            left: 80%;
+            right: 45%;
+        } 
+
         #menu{
             height: 500px;
-            width: 60%;
-            background-color: greenyellow;
+            width: 800px;
+            background-image: url('imagem/board-new.jpg');
             float: left;
+            margin: 0 auto;
             margin-left: 60px;
             margin-top: 10px;
+            
 
+        }
+        #preparo{
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            right: 45%;
         }
         #principal{
             height: 500px;
-            width: 30%;
-            background-color: rgb(80, 59, 59);
+            width: 420px;
+            background-image: linear-gradient(to bottom,#fdddce,#FFB898 );
             float: left;
             margin-top: 10px;
             margin-left: 10px;
+            
+        }
+        #ingredientes{
+            position: absolute;
+            top: 250px;
+            left: 900px;
+            right: 5%;
         }
 
         
         #rodape{
-            height: 100px;
+            height: 20vh;
             width: 91%;
-            background-color: rgb(230, 22, 22);
-            clear: both;
-            margin: 0 auto;
-            margin-top: 550px;
+            background-image: linear-gradient(to bottom,#fdddce,#FFB898 );
+            position: relative;
             
+            margin-top: 530px;
+            left: 4%;
+        }
+        #custo{
+            position: absolute;
             
+            left: 5%;
             
-            
-
         }
     </style>
 </head>
 <body>
     <div id="cabecalho">
-        Header
+        <div id="boneca">
+            
+        </div>
     </div>
     <div id="menu">
-        nav
+            <div id="preparo">
+            <h1>Modo de preparo</h1><br>
+            <ol>
+                <li>Coloque todos os ingredientes no copo do liquidificador e bata bem.</li>
+                <li>Despeje em fôrma de sua preferência untada e enfarinhada.</li>
+                <li>Leve ao forno médio preaquecido (180 ºC) por cerca de 40 minutos ou até dourar.</li>
+                <li>Desenforme morno, deixe esfriar e sirva, se desejar, decorado com coco ralado ou chocolate granulado.</li>
+            
+            </ol>
+        </div>
     </div>
     <div id="principal">
-        Main
+        <div id="ingredientes">
+            <h1>Check list Ingredientes</h1><br>
+            <form>
+                <input type="checkbox" name="3 ovos"checked> 3 ovos <br>
+                <input type="checkbox" name="1 xícara (chá) de leite"> 1 xícara (chá) de leite <br>
+                <input type="checkbox" name="3 colheres (sopa) de manteiga"> 3 colheres (sopa) de manteiga <br>
+                <input type="checkbox" name="1 xícara (chá) de açúcar"checked> 1 xícara (chá) de açúcar <br>
+                <input type="checkbox" name="2 xícaras (chá) de farinha de trigo"> 2 xícaras (chá) de farinha de trigo <br>
+                <input type="checkbox" name="1 colher (sobremesa) de fermento químico"> 1 colher (sobremesa) de fermento químico <br>
+                
+            </form>
+        </div>
     </div>
     
     <div id="rodape">
-        Footer
+        <div id="custo">
+            <h1>Estimativa de custo: </h1><br>
+            
+            <p>&nbsp;&nbsp;&nbsp;Preparação de até R$ 40,00. Para saber se o prato é econômico, divida o valor da receita pelo número de porções.</p>
+        </div>
     </div>
 </body>
 </html>
