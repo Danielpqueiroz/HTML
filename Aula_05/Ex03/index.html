@@ -8,12 +8,21 @@
     <style>
         body{
             
+            
 
         }
         table{
             width: 700px;
             border-collapse: separate;
-            
+            border: 10px;
+            line-height: 30px;
+        }
+        label.dado{
+            text-align: center;
+        }
+        td{
+            border: 1
+            ;
         }
         h2{
             text-align: left;
@@ -24,82 +33,38 @@
 <body>
     <h2>Ficha Cadastral</h2>
     <table>
-        <tr>
-            <td>
-                <form autocomplete="on">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome">
-                </form>
-            </td>
-
-        </tr>
-        <tr >
-            <td rowspan="1">
-                <form autocomplete="on">
-                    <label for="rg">R.G.:&nbsp;&nbsp;</label>
-                    <input type="text" id="rg">
-                </form>
-
-            </td>
-            <td>
-                <form autocomplete="on">
-                    <label for="cpf">C.P.F.:</label>
-                    <input type="text" id="cpf">
-                </form>
-
-            </td>
+        
+            
+            
+        <form autocomplete="on">
+            
+            <label  for="nome">Nome:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input  type="text" id="nome" size="55" maxlength="55" placeholder="Nome Completo"><br>
+            
+            
+            <label for="rg">R.G.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="rg" size="13" maxlength="13" placeholder="EX.: 1.234.567">
+            <label for="cpf">&nbsp;&nbsp;&nbsp;C.P.F.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="cpf" size="13" maxlength="13" placeholder="EX.: 123.456.789-10"><br>
+            <label for="endereco">Endereço:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="endereco" size="55" maxlength="55" placeholder="Rua. Fulano de tal, n 123, Bairro tal."><br>
+            <label for="sexo">Sexo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <label for="nascimento">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de Nascimento:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="date" id="nascimento"><br>
+            <label for="estado_civil">Estado Civil:&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio" name="estado_civil" checked> Solteiro(a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="estado_civil"> Casado(a) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="estado_civil"> Viúvo(a) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Limpar Dados"/>
+        </form>
             
 
-            
-
-        </tr>
-        <tr>
-            <td>
-                <form autocomplete="on">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" id="endereco">
-                </form>
-            </td>
-
-        </tr>
-        <tr>
-            <td rowspan="1">
-                <form >
-                    <label for="sexo">Sexo:</label>
-                    <select>
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                    </select>
-                </form>
-            </td>
-            <td>
-                <form autocomplete="on">
-                    <label for="nascimento">Data de Nascimento:</label>
-                    <input type="text" id="nascimento">
-                </form>
-            </td>
-
-        </tr>
-
-        <tr>
-            <td>
-                <form>
-                    <label for="estado_civil">Estado Civil:</label>
-                    <input type="radio" name="estado_civil" checked> Solteiro(a)
-                    <input type="radio" name="estado_civil"> Casado(a)
-                    <input type="radio" name="estado_civil"> Viúvo(a)
-                </form>
-            </td>
-
-        </tr>
-        <tr>
-            <td>
-                <form>
-                    <input type="reset" value="Limpar Dados"/>
-                </form>
-
-            </td>
-        </tr>
+        
+        
     </table>
     
     
