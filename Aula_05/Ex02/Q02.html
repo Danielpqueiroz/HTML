@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 400px;
+            border-collapse: separate;
+            border: 5px solid black;
+        }
+        
+        td{
+            border: 1px solid black
+        }
+
+        td.dado{
+            font-style: italic;
+        }
+
+        th{
+            background-color: gray;
+            border: 2px solid black;
+        }
+
+        h3{
+            margin-left: 130px;
+            font-weight: 900;
+            font-style: italic;
+            
+        }
+    </style>
+</head>
+<body>
+     <h3> Sudeste x Sul </h3>
+    <table>
+        <tr class="linha">
+            <th colspan="2">Estados</th>
+            <th>Cidades</th>
+        </tr>
+        <tr>
+            <td rowspan="12">Sudeste</td>
+            <td rowspan="3">São Paulo</td>
+            <td class="dado">São Paulo</td>
+        </tr>
+        <tr><td class="dado">Guarulhos</td></tr>
+        <tr><td class="dado">Campinas</td></tr>
+        
+        <tr>
+            <td rowspan="3">Rio de Janeiro</td>
+            <td class="dado">Rio de Janeiro</td>
+        </tr>
+        <tr><td class="dado">São Gonçalo</td></tr>
+        <tr><td class="dado">Duque de Caxias</td></tr>
+
+        <tr>
+            <td rowspan="3">Minas Gerais</td>
+            <td class="dado">Belo Horizonte</td>
+        </tr>
+        <tr><td class="dado">Uberlândia</td></tr>
+        <tr><td class="dado">Contagem</td></tr>
+
+        <tr>
+            <td rowspan="3">Espirito Santo</td>
+            <td class="dado">Vila Velha</td>
+        </tr>
+        <tr><td class="dado">Serra</td></tr>
+        <tr><td class="dado">Caricica</td></tr>
+        <tr>
+            <td rowspan="9">Sul</td>
+            <td rowspan="3">Rio Grande do Sul</td>
+            <td class="dado">Porto Alegre</td>
+        </tr>
+        <tr><td class="dado">Caxias do Sul</td></tr>
+        <tr><td class="dado">Pelotas</td></tr>
+        
+        <tr>
+            <td rowspan="3">Paraná</td>
+            <td class="dado">Curitiba</td>
+        </tr>
+        <tr><td class="dado">Londrina</td></tr>
+        <tr><td class="dado">Maringá</td></tr>
+
+        <tr>
+            <td rowspan="3">Santa Catarina</td>
+            <td class="dado">Joinville</td>
+        </tr>
+        <tr><td class="dado">Florianopolis</td></tr>
+        <tr><td class="dado">Blumenal</td></tr>
+
+        
+
+        
+    </table>
+    
+</body>
+</html>
