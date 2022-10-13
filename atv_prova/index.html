@@ -7,64 +7,65 @@
     <title>Prova da 9º série</title>
 </head>
 <body>
-    
-    <h1>9º Série A - Prova de Conhecimentos Gerais</h1>
-    <p>Responda todas as questões, utilize rascunho em papel para realizar os cálculos. Os rascunhos serão recolhidos pela professora após a quarentena</p>
-    <fieldset>
-        <legend>Informações do aluno</legend>
-        <input  type="text" id="nome" size="55" maxlength="55" placeholder="Digite o seu nome"><br><br>
-        <input  type="number" id="npessoas" size="55" maxlength="55" placeholder="Nº de pessoas no grupo"><br><br>
-        <input  type="text" id="email" size="75" maxlength="75" placeholder="Digite seu email"><br><br>
-        <label for="nascimento">Data de Nascimento:</label><br>
-        <input type="date" id="nascimento"><br><br>
-        <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
-        <input type="password" id="senha" size="20" maxlength="20" placeholder="Digite uma senha">
+    <form action="cadastro.php">
+        <h1>9º Série A - Prova de Conhecimentos Gerais</h1>
+        <p>Responda todas as questões, utilize rascunho em papel para realizar os cálculos. Os rascunhos serão recolhidos pela professora após a quarentena</p>
+        <fieldset >
+            <legend>Informações do aluno</legend>
+            <input  type="text" id="nome" size="55" maxlength="55" placeholder="Digite o seu nome"><br><br>
+            <input  type="number" id="npessoas" size="55" maxlength="55" placeholder="Nº de pessoas no grupo"><br><br>
+            <input  type="text" id="email" size="75" maxlength="75" placeholder="Digite seu email"><br><br>
+            <label for="nascimento">Data de Nascimento:</label><br>
+            <input type="date" id="nascimento"><br><br>
+            <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+            <input type="password" id="senha" size="20" maxlength="20" placeholder="Digite uma senha">
 
-    </fieldset>
-    <fieldset>
-        <legend>Arquitetura de computadores</legend>
-        <img src="https://img.freepik.com/fotos-gratis/plano-de-fundo-de-microchip-inteligente-em-um-remix-de-tecnologia-closeup-da-placa-mae_53876-104233.jpg?w=740&t=st=1665100140~exp=1665100740~hmac=6380c8ab77d3605ce94b2aef9a065efadaa75f02852bf6d8fbe17a331c7b56e0" height="250px"><br>
-        <label for="text">Quanto é 10<sub>2</sub> na base Decimal =</label>
-        <input type="number" id="3+3"><br><br>
-        <label for="text">Quanto é 100<sub>2</sub> na base Decimal =</label>
-        <input type="number" id="10 / 3"><br><br>
-        <label for="text">Quanto é 110<sub>2</sub> na base Decimal =</label>
-        <input type="number" id="5*2"><br><br>
-        <label for="text">Essa tarefa foi difícil?</label>
-        <input type="range" id="dificil">
+        </fieldset>
+        <fieldset>
+            <legend>Arquitetura de computadores</legend>
+            <img src="https://img.freepik.com/fotos-gratis/plano-de-fundo-de-microchip-inteligente-em-um-remix-de-tecnologia-closeup-da-placa-mae_53876-104233.jpg?w=740&t=st=1665100140~exp=1665100740~hmac=6380c8ab77d3605ce94b2aef9a065efadaa75f02852bf6d8fbe17a331c7b56e0" height="250px"><br>
+            <label for="text">Quanto é 10<sub>2</sub> na base Decimal =</label>
+            <input type="number" id="3+3"><br><br>
+            <label for="text">Quanto é 100<sub>2</sub> na base Decimal =</label>
+            <input type="number" id="10 / 3"><br><br>
+            <label for="text">Quanto é 110<sub>2</sub> na base Decimal =</label>
+            <input type="number" id="5*2"><br><br>
+            <label for="text">Essa tarefa foi difícil?</label>
+            <input type="range" id="dificil">
 
 
-    </fieldset>
-    <fieldset>
-        <legend>Geografia</legend><br>
-        <img src="imagem/2-representacao-problema-ambiental.webp" alt=""><br><br>
-        <label for="text">1º) O impacto apresentado nesse ambiente tem sido intensificado pela:</label><br><br>
-        <input type="radio" name="resposta01">a) intervenção direta do homem ao impermeabilizar o solo urbano.<br>
-        <input type="radio" name="resposta01">b) irregularidade das chuvas decorrentes do fenômeno climático El Niño.<br>
-        <input type="radio" name="resposta01">c) queima de combustíveis fósseis como o carvão, o petróleo e o gás natural.<br>
-        <input type="radio" name="resposta01">d) vaporização crescente dos oceanos devido ao derretimento das geleiras.<br>
-        <input type="radio" name="resposta01">e) extinção de organismos marinhos responsáveis pela produção de oxigênio. <br><br>
-        <img src="imagem/1-esquema-problema-atmosferico.webp" alt=""><br><br>
-        <label for="text">2º) No esquema, o problema atmosférico relacionado ao ciclo da água acentuou-se após as revoluções industriais. Uma consequência direta desse problema está na:</label><br><br>
-        <input type="checkbox" name="resposta02">a) redução da flora<br>
-        <input type="checkbox" name="resposta02">b) elevação das marés.<br>
-        <input type="checkbox" name="resposta02">c) erosão das encostas.<br>
-        <input type="checkbox" name="resposta02">d) laterização dos solos.<br>
-        <input type="checkbox" name="resposta02">e) fragmentação das rochas.<br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Geografia</legend><br>
+            <img src="imagem/2-representacao-problema-ambiental.webp" alt=""><br><br>
+            <label for="text">1º) O impacto apresentado nesse ambiente tem sido intensificado pela:</label><br><br>
+            <input type="radio" name="resposta01">a) intervenção direta do homem ao impermeabilizar o solo urbano.<br>
+            <input type="radio" name="resposta01">b) irregularidade das chuvas decorrentes do fenômeno climático El Niño.<br>
+            <input type="radio" name="resposta01">c) queima de combustíveis fósseis como o carvão, o petróleo e o gás natural.<br>
+            <input type="radio" name="resposta01">d) vaporização crescente dos oceanos devido ao derretimento das geleiras.<br>
+            <input type="radio" name="resposta01">e) extinção de organismos marinhos responsáveis pela produção de oxigênio. <br><br>
+            <img src="imagem/1-esquema-problema-atmosferico.webp" alt=""><br><br>
+            <label for="text">2º) No esquema, o problema atmosférico relacionado ao ciclo da água acentuou-se após as revoluções industriais. Uma consequência direta desse problema está na:</label><br><br>
+            <input type="checkbox" name="resposta02">a) redução da flora<br>
+            <input type="checkbox" name="resposta02">b) elevação das marés.<br>
+            <input type="checkbox" name="resposta02">c) erosão das encostas.<br>
+            <input type="checkbox" name="resposta02">d) laterização dos solos.<br>
+            <input type="checkbox" name="resposta02">e) fragmentação das rochas.<br><br>
 
-    </fieldset>
-    <fieldset>
-        <legend>Dê uma nota para sua professora:</legend>
-        <label for="text">Sua professora explica bem a máteria?</label><br>
-        <input type="range" id="notaprof">
+        </fieldset>
+        <fieldset>
+            <legend>Dê uma nota para sua professora:</legend>
+            <label for="text">Sua professora explica bem a máteria?</label><br>
+            <input type="range" id="notaprof">
 
-    </fieldset>
-    <fieldset>
-        <legend>Opiniões</legend>
-        <label  for="opiniao">Digite a sua opinião sobre a disciplina</label><br>
-        <textarea name="mensagem" id="" cols="60" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Opiniões</legend>
+            <label  for="opiniao">Digite a sua opinião sobre a disciplina</label><br>
+            <textarea name="mensagem" id="" cols="60" rows="5"></textarea>
 
-    </fieldset><br>
-    <input type="submit" value="Gravar respostas">
+        </fieldset><br>
+        <input type="submit" value="Gravar respostas">
+    </form>
 </body>
 </html>
